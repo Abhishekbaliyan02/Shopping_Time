@@ -92,8 +92,8 @@ export const Navbar = () => {
             ></i>
 
             {show === true ? (
-              <>
-                <ul className="btns">
+              <div className="navbar-btn">
+                <ul>
                   <i
                     className="fa-solid fa-xmark"
                     onClick={() => {
@@ -149,7 +149,7 @@ export const Navbar = () => {
                     </Link>
                   </li>
                 </ul>
-              </>
+              </div>
             ) : (
               ""
             )}
@@ -159,18 +159,17 @@ export const Navbar = () => {
 
       {search == true ? (
         <div className="search-bar">
-          <form action="">
-            <input
-              type="text"
-              name=""
-              id=""
-              placeholder="Search.."
-              value={searchitem}
-              onChange={(e) => {
-                setSearchitem(e.target.value);
-              }}
-            />
-          </form>
+          <input
+                type="text"
+                name=""
+                id=""
+                className="form-control"
+                placeholder="Search.."
+                value={searchitem}
+                onChange={(e) => {
+                  setSearchitem(e.target.value);
+                }}
+              />
         </div>
       ) : (
         ""
