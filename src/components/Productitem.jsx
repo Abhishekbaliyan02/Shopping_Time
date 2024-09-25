@@ -34,7 +34,7 @@ export const Productitem = () => {
   console.log(productdata);
 
   return productdata ? (
-    <div>
+    <div className="product-page">
       <div className="product-details">
         <div className="images">
           {productdata.image.map((item, index) => {

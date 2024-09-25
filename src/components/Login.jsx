@@ -12,7 +12,7 @@ export const Login = () => {
       </div>
       <div className="loginform">
         <form action="">
-          <div class="form-floating mb-3">
+          <div class="form-floating">
             <input
               type="text"
               class="form-control label1"
@@ -24,7 +24,7 @@ export const Login = () => {
 
           {Account == false ? (
             <>
-              <div class="form-floating mb-3">
+              <div class="form-floating">
                 <input
                   type="email"
                   class="form-control label1"

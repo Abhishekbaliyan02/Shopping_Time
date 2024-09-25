@@ -4,7 +4,7 @@ import { ShopContext } from "./ShopContext";
 import { CartTotal } from "./CartTotal";
 
 export const Cart = () => {
-  let { products, cartItems, updateQuantity, navigate } =
+  let { products, cartItems, updateQuantity, navigate ,currency } =
     useContext(ShopContext);
 
   let [cartData, setCartdata] = useState([]);
@@ -27,7 +27,7 @@ export const Cart = () => {
     setCartdata(tempdata);
   }, [cartItems]);
 
-  return (
+  return cartData.length == 0 ? (<div className="empty"><h1>Cart is empty</h1></div>) : (
     <div className="cart-page">
       <div className="cart">
         <h1>Your Cart-</h1>
@@ -39,7 +39,7 @@ export const Cart = () => {
               <div className="cartitems">
                 <img src={productdata.image[0]} alt="" />
                 <div className="title">{productdata.name}</div>
-                <div className="price">{productdata.price}</div>
+                <div className="price">{currency}{productdata.price}</div>
                 <div className="size">{item.size}</div>
                 <input
                   type="number"

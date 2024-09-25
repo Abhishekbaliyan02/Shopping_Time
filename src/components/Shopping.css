@@ -240,8 +240,9 @@ form {
 
 .showcategory i {
     position: relative;
-    top: -32px;
-    left: 80px;
+    top: -47px;
+    left: 155px;
+    font-size: 25px;
 }
 
 .filters h4 {
@@ -387,14 +388,6 @@ form {
     margin: 10px 0px;
 }
 
-.form-select {
-    background-color: black;
-    color: aliceblue;
-    border: 1px solid rgb(4, 60, 4);
-    width: 70px;
-    margin: 10px 0px 20px 0px;
-}
-
 .description {
     width: 90%;
     height: 200px;
@@ -469,7 +462,12 @@ img {
     height: 40px;
     background-color: black;
     color: aliceblue;
-    margin: -10px 0px 0px 230px;
+    margin: -10px 0px 20px 230px;
+}
+
+.empty {
+    text-align: center;
+    margin: 50px;
 }
 
 
@@ -605,14 +603,14 @@ h4 {
 
 .loginform {
     width: auto;
-    height: auto;
+    height: 250px;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
 }
 
 .loginform form {
-    width: 500px;
+    width: 340px;
     height: 200px;
     margin: auto;
 }
@@ -645,6 +643,10 @@ h4 {
     position: relative;
     left: 140px;
     top: 20px;
+}
+
+.form-floating {
+    margin-bottom: 20px;
 }
 
 
@@ -892,17 +894,23 @@ h4 {
 
 
     .products {
-        display: grid;
-        grid-template-columns: 50% 50%;
+        display: flex;
+        flex-direction: column;
         padding: 10px;
-        gap: 30px;
         justify-content: center;
+        margin: 5px;
     }
 
     .heading-line {
         width: auto;
     }
 
+
+    /* Toprated */
+
+    .top-rated {
+        margin: 4070px auto auto auto;
+    }
 
     /* Our Policy */
 
@@ -917,14 +925,11 @@ h4 {
 
     form {
         margin: auto 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
-
-    /* Toprated */
-
-    .top-rated {
-        margin: 1860px auto auto auto;
-    }
 
 
     /* Collection */
@@ -933,9 +938,9 @@ h4 {
 
     .collection-items {
         width: 90%;
-        margin: 50px auto;
-        display: grid;
-        grid-template-columns: 50% 50%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
     }
 
@@ -988,6 +993,266 @@ h4 {
 
     .login {
         width: auto;
+    }
+
+    .form-floating {
+        margin-bottom: 0px;
+    }
+
+    /* Cart */
+
+
+    .cart-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carttotal button {
+        width: 180px;
+        height: 40px;
+        background-color: black;
+        color: aliceblue;
+        margin: 0px 0px 20px 180px;
+    }
+
+    .cart {
+        padding: 10px;
+    }
+
+    .cartitems {
+        width: 95%;
+        height: 110px;
+        background-color: rgba(235, 229, 229, 0.629);
+        display: flex;
+        padding: 5px;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px auto;
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    img {
+        width: 50px;
+        height: 70px;
+    }
+
+    .delete i {
+        cursor: pointer;
+    }
+
+    .quantity {
+        width: 40px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+
+
+
+    /* Cart Total */
+
+    .cart-total {
+        width: auto;
+        height: auto;
+        background-color: aliceblue;
+        margin: 80px 0px 20px 0px;
+        padding: 20px;
+    }
+
+
+    .subtotal {
+        display: flex;
+        gap: 175px;
+    }
+
+    .shipping {
+        display: flex;
+        gap: 180px;
+    }
+
+    .total {
+        display: flex;
+        gap: 220px;
+    }
+
+    /* About */
+
+
+    .aboutpage img {
+        width: 300px;
+        height: 360px;
+        float: left;
+        margin: 20px;
+    }
+
+    .about-item {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .policy {
+        width: 290px;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+
+
+    /* Contact */
+
+
+
+    .contact-page {
+        width: 350px;
+    }
+
+    .contact-page img {
+        width: 300px;
+        height: 400px;
+        float: left;
+        margin: 10px;
+    }
+
+    .contact-information {
+        width: 350px;
+        height: 420px;
+        /* margin: auto 500px; */
+        margin-top: 450px;
+        margin-left: -0px;
+
+    }
+
+    /* Product Item */
+
+    .product-page {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-details {
+        width: auto;
+        height: 440px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 0px;
+        gap: 0px;
+    }
+
+    .images {
+        width: auto;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .images img {
+        width: 100px;
+        height: 97px;
+        cursor: pointer;
+    }
+
+    .image {
+        width: auto;
+        height: 400px;
+        padding: 9px;
+    }
+
+    .image img {
+        width: 200px;
+        height: 420px;
+        cursor: pointer;
+    }
+
+    .details {
+        width: 350px;
+        height: 535px;
+        padding: 10px;
+        background-color: #edecee;
+        margin-top: 50px;
+    }
+
+    .description {
+        width: 90%;
+        height: 200px;
+        margin: 550px auto 400px auto;
+        padding: 10px;
+    }
+
+    .btns {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+
+    .selected {
+        border: 1px solid black;
+    }
+
+
+    /* placeorder */
+
+
+    .placeorder {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .email {
+        width: 300px;
+    }
+
+    .street {
+        width: 300px;
+    }
+
+    .phone {
+        width: 300px;
+    }
+
+    .payment {
+        width: 320px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .placeorderbtn {
+        width: 300px;
+        height: 35px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        margin-top: 10px;
+    }
+
+
+    /* Orders */
+
+
+    .delete button {
+        padding: 5px 10px 5px 10px;
+        height: 50px;
+        background-color: white;
+        border: none;
     }
 
 
